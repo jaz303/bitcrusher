@@ -1,6 +1,6 @@
 {
   "name": "bitcrusher",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Bitcrush effect for the web audio API",
   "main": "index.js",
   "scripts": {
