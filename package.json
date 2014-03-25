@@ -1,0 +1,27 @@
+{
+  "name": "bit-crusher",
+  "version": "0.0.0",
+  "description": "Bitcrush effect for the web audio API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaz303/bitcrusher.git"
+  },
+  "keywords": [
+    "bit",
+    "crush",
+    "bitcrush",
+    "audio",
+    "effect",
+    "webaudio"
+  ],
+  "author": "Jason Frame <jason@onehackoranother.com> (http://jasonframe.co.uk)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaz303/bitcrusher/issues"
+  },
+  "homepage": "https://github.com/jaz303/bitcrusher"
+}
