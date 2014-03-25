@@ -33,7 +33,7 @@ module.exports = function(audioContext, opts) {
 
             for (var s = 0, l = ob.length; s < l; ++s) {
                 phasor += normFreq;
-                if (phasor > 1) {
+                if (phasor >= 1) {
                     phasor -= 1;
                     last = step * floor((id[s] * invStep) + 0.5);
                 }
