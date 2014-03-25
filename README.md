@@ -30,10 +30,10 @@ bitcrushNode.connect(audioContext.destination);
 
 Create a new bitcrusher with the specified options:
 
-    * `bufferSize`: defaults to 4096
-    * `channelCount`: defaults to 2
-    * `bits`: output resolution, defaults to 8
-    * `frequency`: sample-and-hold ratio; used to reduce the perceived output frequency. Defaults to 1 (no change).
+  * `bufferSize`: defaults to 4096
+  * `channelCount`: defaults to 2
+  * `bits`: output resolution, defaults to 8
+  * `frequency`: sample-and-hold ratio; used to reduce the perceived output frequency. Defaults to 1 (no change).
 
 Returns a `ScriptProcessorNode` configured with a bitcrush effect.
 
