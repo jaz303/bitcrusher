@@ -12,7 +12,7 @@ module.exports = function(audioContext, opts) {
 
     var bufferSize      = opts.bufferSize || 4096,
         channelCount    = opts.channelCount || 2,
-        bits            = clamp(1, Infinity, (opts.bits || 8) | 0),
+        bits            = clamp(1, Infinity, (opts.bitDepth || 8) | 0),
         normFreq        = clamp(0, 1, opts.frequency || 1),
         step            = 2 * Math.pow(0.5, bits),
         invStep         = 1 / step,
@@ -43,6 +43,22 @@ module.exports = function(audioContext, opts) {
         }
 
     }
+
+    Object.defineProperty(processor, 'bitDepth', {
+        get: function() { return bits; },
+        set: function(v) {
+            bits = v;
+            step = 2 * Math.pow(0.5, bits);
+            invStep = 1 / step;
+        }
+    });
+
+    Object.defineProperty(processor, 'frequency', {
+        get: function() { return normFreq; },
+        set: function(v) {
+            normFreq = clamp(0, 1, v);
+        }
+    });
 
     return processor;
 
