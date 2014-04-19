@@ -4,7 +4,7 @@ Implementation of a bit-crush effect using the Web Audio API.
 
 ## Installation
 
-Use browserify!
+Browserify is recommended; alternatively you can grab a UMD module from the `build` directory. If using `npm`:
 
     $ npm install bitcrusher
 
