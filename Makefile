@@ -7,7 +7,7 @@ BUNDLE 			= $(BUILD_DIR)/$(MODULE).js
 DEMO_BUNDLE 	= demo/bundle.js
 DEMO_ENTRY 		= demo/main.js
 
-.PHONY: all watch
+.PHONY: all clean watch
 
 all: $(BUNDLE) $(DEMO_BUNDLE)
 
@@ -23,8 +23,8 @@ $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
 
 $(BUNDLE): $(BUILD_DIR) $(SRC)
-	browserify -s $(EXPORT) -o $(BUNDLE) $(ENTRY)
+	browserify -s $(EXPORT) -o $@ $(ENTRY)
 
 $(DEMO_BUNDLE): $(DEMO_ENTRY) $(SRC)
-	browserify -o $(DEMO_BUNDLE) $(DEMO_ENTRY)
+	browserify -o $@ $(DEMO_ENTRY)
 
