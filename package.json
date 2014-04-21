@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/jaz303/bitcrusher/issues"
   },
-  "homepage": "https://github.com/jaz303/bitcrusher"
+  "homepage": "https://github.com/jaz303/bitcrusher",
+  "devDependencies": {
+    "uglify-js": "~2.4.13"
+  }
 }
